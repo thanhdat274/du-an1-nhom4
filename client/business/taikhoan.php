@@ -141,11 +141,11 @@ function send_mail_mk($email, $matkhaumoi)
         $mail->CharSet  = "utf-8";
         $mail->Host = 'smtp.gmail.com';  //SMTP servers
         $mail->SMTPAuth = true; // Enable authentication
-        $mail->Username = 'datthanhnguyen2704@gmail.com'; // SMTP username
-        $mail->Password = 'nguyenthanhdat27042002';   // SMTP password
+        $mail->Username = 'email'; // SMTP username
+        $mail->Password = 'password';   // SMTP password
         $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
         $mail->Port = 465;  // port to connect to                
-        $mail->setFrom('datthanhnguyen2704@gmail.com', 'Zonker Shop');
+        $mail->setFrom('email', 'Zonker Shop');
         $mail->addAddress($email, $matkhaumoi);
         $mail->isHTML(true);  // Set email format to HTML
         $mail->Subject = 'MAIL ĐỔI MẬT KHẨU';
